@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construtor de Fichas</title>
+
+  
+  <link href="/css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div id="novaConta">
+        <h3><center>Crie sua conta!</center></h3>
+        <div>
+            <center>
+        <input type="email" id="email" placeholder="seuemail@email.com" /></center>
+        <br>
+    <center><input type="password" id="senha" placeholder="senha"/></center>
+    </div>
+        <center><button type="button" class="outline" onclick="novoUser()">Criar Conta</button></center>
+        <center><button type="button" class="outline" onclick="location.href='../index.html'">Cancelar</button></center>
+      </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+      
+    <script>
+      // Configuração do seu aplicativo no Firebase
+      var firebaseConfig = {
+          apiKey: "AIzaSyA5SMq2i6Fj7mqurZgl2ux9_3vQ4lVXZls",
+          authDomain: "fichas-c2698.firebaseapp.com",
+          projectId: "fichas-c2698",
+          storageBucket: "fichas-c2698.appspot.com",
+          messagingSenderId: "43168657811",
+          appId: "1:43168657811:web:b2ddd4f0fa6a5c47f93866"
+      };
+      // Inicializa o Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="/js/script.js"></script>
+
+    </body>
+
+</html>
