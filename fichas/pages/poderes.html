@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poderes</title>
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="poderes">
+        <div class="popup" id="PopUpNovoPoder">
+            <center><h3>Adicionar Poder</h3></center>
+        </div>
+
+            <br>
+            
+        <div id="newPower">
+            <center>
+                <h3>Nome do Poder</h3>
+                <input type="text" id="nomePoder" />
+            </center>
+            <!-- <input type="text" placeholder="Efeito" id="nomeEfeito" /> -->
+
+            <center>
+                <h3>Efeito</h3>
+                <input list="efeitosLista" id="poderEfeito">
+                <datalist id="efeitosLista" name="efeitos" ></datalist>
+            </center>
+            
+            <br>
+            
+            <center>
+                <input id="opcoes" type="button" value="Criar" onclick='subimitPower()'/>
+                <button onclick="location.href='../pages/construtor.html'">Voltar</button>
+            </center>
+        </div>
+    </div>
+
+</body>
+
+<script src="../js/poderes.js"></script>
+
+</html>

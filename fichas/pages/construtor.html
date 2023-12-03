@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html> -->
+<html lang="pt-br">
+
+<head>
+  <!-- <meta charset="UTF-8"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Construtor de Fichas</title>
+
+
+  <link href="../css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <div id="construtor">
+    <h3>Construa Um Novo Personagem</h3>
+    
+    <div>
+      <center>
+        <input id="nome" placeholder="Nome" id="fieldNome"/>
+      </center>
+      
+      <center>
+        <input id="efeitos" placeholder="Efeitos"/>
+      </center>
+
+      <center>
+        <a href="./habilidades.html" class="btnMenu">
+          <input type="button" value="Habilidades" id="habilidades" placeholder="habilidades"/>
+        </a>
+      </center>
+        
+      <center>
+        <a href="./pericias.html" class="btnMenu">
+          <input type="button" value="Perícia" id="pericia" placeholder="pericia"/>
+        </a>
+      </center>
+        
+      <center>
+        <a href="./poderes.html" class="btnMenu">
+          <input type="button" value="Poderes"  placeholder="poderes" />
+        </a>
+      </center>  
+
+    </div>
+    
+    <div class="botoes">
+      <center>
+        <button onclick="novaFicha()">Criar Ficha</button>
+        <button onclick="location.href='../pages/home.html'">Cancelar</button>
+      </center>
+    </div>
+
+  </div>
+      
+      
+      
+      
+      
+      
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script>
+      // Configuração do seu aplicativo no Firebase
+      var firebaseConfig = {
+        apiKey: "AIzaSyA5SMq2i6Fj7mqurZgl2ux9_3vQ4lVXZls",
+        authDomain: "fichas-c2698.firebaseapp.com",
+        projectId: "fichas-c2698",
+        storageBucket: "fichas-c2698.appspot.com",
+        messagingSenderId: "43168657811",
+        appId: "1:43168657811:web:b2ddd4f0fa6a5c47f93866"
+      };
+      // Inicializa o Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="../js/script.js"></script>
+    <script src="../js/construtor.js"></script>
+</body>
+
+</html>

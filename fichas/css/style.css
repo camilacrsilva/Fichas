@@ -1,0 +1,153 @@
+body {   
+   background: rgba(25, 75, 125, 0.75);
+   color: white;
+   padding: 0px;
+   margin: 0px;
+   font-family: 'Nunito', sans-serif;
+   font-size: 16px;
+}
+ 
+input, button {
+   font-family: 'Nunito', sans-serif;
+   font-weight: 700;   
+}
+
+#login{
+   background: rgba(255, 255, 255, 0.281);
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 13.5px );
+   -webkit-backdrop-filter: blur( 13.5px );
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+   width: 25%;
+   
+   position: absolute;
+   top: 50%; /* posiciona na metade da tela */
+   margin-top: -25px;
+
+   position: absolute;
+   top: 20%; /* posiciona na metade da tela */
+   margin-top: -25px; /* e retrocede metade da altura */
+   left: 45%; /* posiciona na metade da tela */
+   margin-left: -100px;
+}
+
+#novaConta, #home, #fichas{
+   background: rgba(255, 255, 255, 0.281);
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 13.5px );
+   -webkit-backdrop-filter: blur( 13.5px );
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+   width: 25%;
+   
+   position: absolute;
+   top: 50%; /* posiciona na metade da tela */
+   margin-top: -25px;
+
+   position: absolute;
+   top: 30%; /* posiciona na metade da tela */
+   margin-top: -25px; /* e retrocede metade da altura */
+   left: 45%; /* posiciona na metade da tela */
+   margin-left: -100px;
+}
+
+#poderes{
+   background: rgba(255, 255, 255, 0.281);
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 13.5px );
+   -webkit-backdrop-filter: blur( 13.5px );
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+   width: 25%;
+   
+   position: absolute;
+   top: 50%; /* posiciona na metade da tela */
+   margin-top: -25px;
+
+   position: absolute;
+   top: 20%; /* posiciona na metade da tela */
+   margin-top: -25px; /* e retrocede metade da altura */
+   left: 45%; /* posiciona na metade da tela */
+   margin-left: -100px;
+}
+
+input{
+   width: 300px;
+
+   padding: 15px;
+   border-radius: 15px;
+   width: 75%;
+   margin-bottom: 15px;
+
+   position:relative;   
+   text-align: center;
+   color: black;
+}
+
+button, #opcoes{
+   background: rgba(0, 0, 0, 0.74); 
+   color: white;
+   border: 1px solid #f7ed59; 
+   border-radius: 15px;
+   margin-bottom: 15px;
+
+   padding: 15px;
+   width: 50%;
+   height: 50px;
+   transition: 0.3s;
+
+   position:relative;
+}
+
+#logo{
+   width: 250px;
+   margin-top: 15px;
+}
+
+#novaFicha, #ficha{
+   background-color: white;
+   border-radius: 15px;
+   color: black;
+   font-family: 'Nunito', sans-serif;
+   font-size: 16px;
+   width: 75%;
+}
+
+#construtor, .habilidades{
+   background: rgba(255, 255, 255, 0.281);
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 13.5px );
+   -webkit-backdrop-filter: blur( 13.5px );
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+   width: 25%;
+   
+   position: absolute;
+   top: 50%; /* posiciona na metade da tela */
+   margin-top: -25px;
+
+   position: absolute;
+   top: 10%; /* posiciona na metade da tela */
+   margin-top: -25px; /* e retrocede metade da altura */
+   left: 45%; /* posiciona na metade da tela */
+   margin-left: -100px;
+}
+
+#construtor h3{
+   text-align: center;
+}
+
+.btnMenu input{
+   background-color: white;
+}
+
+.rowCenter{
+   display: flex;
+   flex-direction: column;
+   align-items: center;   
+}
