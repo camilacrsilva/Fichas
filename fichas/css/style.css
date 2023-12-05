@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+* {
+    font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+/* ELEMENTOS DA INTERFACE */
+
+body {
+    background-color: #375e74;
+    /*background-image: linear-gradient(180deg, #372991, #15142b);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;*/
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    width: 25%;
+   
+    position: absolute;
+    top: 50%; 
+    margin-top: -25px;
+ 
+    position: absolute;
+    top: 15%;
+    margin-top: -25px;
+    left: 45%;
+    margin-left: -100px;
+}
+
+header, main, section, article {
+    max-width: 700px;
+}
+
+header > h1 {
+    color: white;
+    text-shadow: 3px 3px 0px black;
+}
+
+main, section, article {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
+}
+
+img{
+    width: 250px;
+    margin-bottom: 25px;
+}
+
+footer {
+    display: block;
+    width: 100vw;
+    background-color: #1f346c;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    padding: 5px;
+}
+
+p {
+    text-align: justify;
+    font-weight: 750;
+    line-height: 1.5em;
+    
+}
+
+h2, h3, h4 {
+    color: white;
+    text-align: center;
+    /*margin: 0 0 10px 0;*/
+}
+
+a {
+    color: #15142b;
+    background-color: rgba(55, 41, 145, 0.1);
+    padding: 0 3px;
+    font-weight: 600;
+    text-decoration: none;
+    /*border-bottom: .5px dotted #372991;*/
+}
+
+a:hover {
+    color: #666666;
+}
+
+/* TABELAS E LISTAS */
+
+table {
+    min-width: 400px;
+    border-spacing: 0px;
+    border: 0.5px solid #372991;
+    margin: 10px auto;
+}
+
+table th {
+    background-color: #372991;
+    color: white;
+    padding: 5px;
+    text-align: left;
+}
+
+table td {
+    padding: 5px;
+}
+
+table tr {
+    background-color: rgba(55, 41, 145, 0.05);
+}
+
+table tr:nth-child(odd) {
+    background-color: rgba(55, 41, 145, 0.3);
+}
+
+table.divisao {
+    border: 1px solid white;
+}
+
+table.divisao td {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+table.divisao  tr:nth-child(1) td:nth-child(2) {
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+table.divisao tr:nth-child(2) td:nth-child(2) {
+    border-left: 3px solid black;
+}
+
+table.divisao tr:nth-child(2) td:nth-child(1) {
+    text-decoration: underline;
+}
+
+ul > li::marker {
+    color: #372991;
+}
+
+/* ELEMENTOS DE FORMULÁRIO */
+
+form {
+    /*background-color: rgba(55, 41, 145, 0.2);*/
+    padding: 15px;
+    border-radius: 25px;
+}
+
+form label {
+    display: block;
+    width: fit-content;
+    font-size: 0.8em;
+    font-weight: 100;
+    background-color: rgba(55, 41, 145, 0.2);
+    /*padding: 3px 7px;*/
+    margin-top: 10px;
+    /*margin-bottom: 0px;
+    border-radius: 5px;*/
+}
+
+input[type=text], input[type=number], select, input[type=date], input[type=date], input[type=datetime], input[type=email], input[type=month], input[type=password], input[type=range], input[type=tel], input[type=time], input[type=week] {
+    width: 100%;
+    height: 40px;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 750;
+    /*margin: 8px 0;*/
+    margin: -5px 0px 25px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    font-size: 1em;
+    font-weight: 750;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=reset] {
+    width: 100%;
+    background-color: #eb9903;
+    font-size: 1em;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #c27013;
+}
+
+input[type=button], button{
+    background-color: #1a1a1a;
+    
+    width: 100%;
+    height: 50px;
+
+    font-size: 1em;
+    font-weight:bold;
+    color: white;
+    /*padding: 10px 20px;
+    margin-bottom: 5px;*/
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button{
+    margin-bottom: 25px;
+}
+
+input[type=button]:hover, button:hover {
+    background-color: #666666;
+}
+
+fieldset {
+    border: 0.5px dotted #372991;
+}
+
+fieldset > legend {
+    font-size: 0.8em;
+    font-weight: 100;
+    background-color: rgba(55, 41, 145, 0.2);
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+
+input[type=radio] + label, input[type=checkbox] + label {
+    display: inline-block;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+#containerPoderes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.individualPower{
+    border-radius: 10px;
+    /*border: 1px solid black;*/
+    
+    background: rgba(255, 255, 255, 0.281);
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 13.5px );
+   -webkit-backdrop-filter: blur( 13.5px );
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 150%;
+    
+}
+
+.CountSpace{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.CountSpace input{
+    width: 25px;
+}
+
+#newPower{
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 5px;
+
+    
+}
+
+.DeleteClass{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.DeleteText{
+  color: rgb(207, 32, 1);
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.281);
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 13.5px );
+   -webkit-backdrop-filter: blur( 13.5px );
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.popup{
+  cursor: pointer;
+}
+
+input{
+    margin-top: 25px;
+    height: 50px;
+}
+
+#efeitos{
+    text-align: center;
+    margin-bottom: -25px;
+}
+
+p{
+    font-size: 20px;
+}

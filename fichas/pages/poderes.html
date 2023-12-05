@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poderes</title>
+    
+    <link href="/css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div id="containerPoderes">
+
+    </div>
+
+    <div class="popup" id="PopUpNovoPoder">
+        <p>Adicionar Poder</p>
+    </div>
+    <div id="newPower">
+        <input type="text" placeholder="Nome do Poder" id="nomePoder" />
+        <!-- <input type="text" placeholder="Efeito" id="nomeEfeito" /> -->
+        <laber id="efeitos" for="efeitos">Efeito</laber>
+        <input list="efeitosLista" id="poderEfeito">
+        <datalist id="efeitosLista" name="efeitos" >
+
+        </datalist>
+        <input type="button" value="Criar" onclick='subimitPower()'/>
+    </div>
+
+
+
+
+
+</body>
+
+<script src="../js/poderes.js"></script>
+
+</html>

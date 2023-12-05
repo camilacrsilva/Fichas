@@ -1,0 +1,89 @@
+{
+    "notas":{
+        "texto":[
+            "Evitar Problemas Futuros com UTF8",
+            "# _ = espaço",
+            "# 1 = í",
+            "# 4 = ã",
+            "# 5 = ç",
+            "# 0 = ó"
+        ]
+    },
+
+    "Afli54o":{
+        "tipo": "Ataque",
+        "acao": 1,
+        "alcance": 1,
+        "duracao": 1,
+        "custo": 1,
+        "modificadores":{
+
+        }
+    },
+
+    "Alongamento":{
+        "tipo": "Geral",
+        "acao": 3,
+        "alcance": 0,
+        "duracao": 3,
+        "custo": 1
+    },
+
+    "Camuflagem":{
+        "tipo": "Sensorial",
+        "acao": 3,
+        "alcance": 0,
+        "duracao": 3,
+        "custo": 2
+
+    },
+
+    "Caracter1stica":{
+        "tipo": "Geral",
+        "acao": 0,
+        "alcance": 0,
+        "duração": 0,
+        "custo": 1
+    },
+    
+    "Caracter1stica_Aumentada":{
+        "tipo": "Geral",
+        "acao": 3, 
+        "alcance": 0,
+        "duracao": 3,
+        "custo": 0
+    },
+
+    "Crescimento":{
+        "tipo": "Geral",
+        "acao": 3,
+        "alcance": 0,
+        "duracao": 3,
+        "custo": 2
+    },
+
+    "Criar":{
+        "tipo": "controle",
+        "acao": 1,
+        "alcance": 2,
+        "duracao": 3,
+        "custo": 2
+    },
+
+    "Cura":{
+        "tipo": "Geral",
+        "acao": 1,
+        "alcance": 1, 
+        "duracao": 1,
+        "custo": 2
+    },
+
+    "Dano":{
+        "tipo": "Ataque",
+        "acao": 1,
+        "alcance": 1, 
+        "duracao": 1,
+        "custo": 1
+    }
+
+}   

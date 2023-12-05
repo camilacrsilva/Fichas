@@ -1,0 +1,1 @@
+https://fabrica-do-multiverso-default-rtdb.firebaseio.com/index
